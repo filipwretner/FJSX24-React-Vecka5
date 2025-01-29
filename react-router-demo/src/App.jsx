@@ -1,12 +1,13 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 // import Footer from "./components/Footer/Footer";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <main>
       <Header />
-      <h1>Welcome to home Page and Hello React Router</h1>
+      <Outlet />
       {/* <Footer /> */}
     </main>
   );
